@@ -21,6 +21,12 @@ $10,11,12,13,14,15$ when writing hex digits which would be confusing we use digi
 
 Note when we refer to "decimal" outside of discussing decimal systems, we just mean base 10. 
 
+| Name        | Base | Digits        |
+| ----------  | ---- | -------       |
+| Binary      | 2    | 0,1           |
+| Decimal     | 10   | 0,...,9       |
+| Hexadecimal | 16   | 0,..,9,A,..,F |
+
 ## Converting integers
 
 In the notes, I will try to write a subscript $x_{b}$ to denote that $x$ is in binary, and $x_{10}$ to denote $x$ is in decimal.
