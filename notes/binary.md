@@ -101,9 +101,59 @@ VSCode is an "Integrated Development Environment" which is just a fancy term for
 
 Once you've installed as above, open a Terminal (I can use Shift+Command to open Spotlight Search and then type in "Terminal") and then just type in 
 
-> `clang++ --version`
-> ```
-Homebrew clang version 12.0.1
+`> clang++ --version`
+
+My output is the following, yours will be something similar.
+
+```
+> Homebrew clang version 12.0.1
 Target: x86_64-apple-darwin20.4.0
 Thread model: posix
-InstalledDir: /usr/local/opt/llvm@12/bin```
+InstalledDir: /usr/local/opt/llvm@12/bin
+```
+
+### QUICK TERMINAL TUTORIAL
+
+I want you to get familiar with using the tutorial so here are a few commands which will be useful. Note a "directory" is basically a "folder."
+
+Anything with `<???>` do not include the brackets. So a command I'm saying 
+`cmd <bla>` means invoke it just as `cmd bla`.
+
+| Command     | Function |
+| ----------  |  -------------- |
+| `echo <anything>` | Will print the `anything` to the command line |
+| `ls`        | Lists all files in current directory |
+| `cd <name>` | Changes directory to name (name must be in current directory) |
+| `mkdir <name>` | Makes a directory called "name" |
+| `touch <name>` | Makes an empty file called "name" |
+| `cat <name>`   | Prints the contents of the file "name" to the command line |
+
+I suggest you try this! 
+
+Try `ls` a few times, use `cd` to change directories, to go back up a level use `cd ..` and try making files and printing to the command line. This is going to be very useful when writing different software.  
+
+### Hello World 
+
+So, in the command line, make a folder for your course, call it whatever you'd like. Then `cd` into your folder and create a file called `hello.cc` (you have a command for this). Then, in VSCode open the file and copy paste the below code.
+
+```cpp
+#include <iostream>
+
+
+int main() {
+    // Print Hello, world
+    // since "Hello darkness, my old friend" 
+    // is too edgy and also not convention
+    std::cout << "Hello, world." << std::endl;
+}
+```
+
+Then, save this file, open up your terminal again and type the command 
+
+> `clang++ hello.cc -o hello`
+
+If everything was typed correctly there shouldn't be any problem. Then `ls` your folder and you'll see a file just called `hello`. Now, to execute this program write the following command. 
+
+> `./hello`
+
+This should print `Hello, world.` to the command line, and you've written your first C++ program!! 
