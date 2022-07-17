@@ -47,4 +47,8 @@ Note, `\n` only prints newline on Mac or Linux. On Windows it doesn't, which is 
 
 ## Standard input 
 
-Standard input is very confusing and it only gets worse the more you learn. I will just give a few examples which are useful to know when learning and writing problems
+Standard input is very confusing and it only gets worse the more you learn. I will just give a few examples which are useful to know when learning and writing problems...
+
+TBC
+
+[[PREV NOTES](./3_flow.md)]

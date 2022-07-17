@@ -132,7 +132,7 @@ for (int i = 0; i < 100; i++) {
 }
 ```
 
-what this does is it initializes a variable [cpp]`int i` for inside the for loop (so `i` won't work outside the for loop, it is out of scope!) and then will check if `i < 100`, if it is, it will execute the body of the for loop, and then at the end of the body of the for loop it will execute `i++`, so it will increment `i` and do it again. This will print numbers 0,...,99. 
+what this does is it initializes a variable `int i` for inside the for loop (so `i` won't work outside the for loop, it is out of scope!) and then will check if `i < 100`, if it is, it will execute the body of the for loop, and then at the end of the body of the for loop it will execute `i++`, so it will increment `i` and do it again. This will print numbers 0,...,99. 
 
 In general for loop syntax is 
 
@@ -199,3 +199,6 @@ while (x > 0) {
 }
 ```
 Does the above while loop terminate? If so, what is the value of $n$ at the end of the while loop? 
+
+[[PREV NOTES](./2_variables.md)]
+[[NEXT NOTES](./3_stdin.md)]
