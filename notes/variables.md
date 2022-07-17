@@ -48,3 +48,96 @@ int main() {
 ```
 
 We will look at control flow next, but note `if`, `else`, `for` and `while` statements have their own scope as well, so if you declare a variable inside of it, be careful that you only use it inside that scope. 
+
+## Arithmetic 
+
+Arithmetic is as it is in any other language and how you would expect it to be in written English. 
+
+```cpp 
+// Addition example
+int x = 2;
+int y = 3;
+int z = x+y; // z is 5
+
+// Multiplication example 
+int x = 2;
+int y = 7;
+int z = x*y; // z is 14
+```
+
+Now division is more complicated. 
+Division with integers in C++ is "integer division" 
+which "rounds down" to the nearest integer (towards ?) 
+so $3/2 = 1$.
+
+```cpp
+int x = 5;
+int y = 2;
+int z = x/y; // z is 2 because of integer division
+```
+
+Note there is no native exponentiation in C++... So you can't do $3^n$ for any $n$, you have to write your own function to do that (which we'll get to)
+
+## Modulo operator
+
+This is a very useful operator! You can think of modulo as the "remainder" operator. So, if I take `5 % 2` I will get `1` back since `5/2` has a remainder of `1`. Some examples 
+
+```cpp 
+int x = 6 % 4; // 2 
+int y = 35 % 11; // 2 since 35 = 3*11 + 2.
+int z = -5 % 3; // -2 weird... i recommend avoiding using negative numbers 
+``` 
+
+### Arithmetic assignments
+
+Like in Python and some other languages sometimes we want to do the following 
+
+```cpp
+int x = 2;
+x = x + 3;
+```
+
+So there are specific operators, `+=`, `-=`, `*=`, and `/=` which will add, subtract, multiply and divide, respectively, and then store it in the variable on the LHS. So
+
+```cpp
+// +=
+x = x + 3; // is the same as
+x += 3;
+// -= 
+x = x - 2; 
+x -= 2;
+```
+
+and so on.
+
+### Increment and decrement operators
+
+Programmers realized that a very common thing was to do `x += 1` or 
+`x -= 1`, namely increment by one or decrement by one. So, they came up with an operator to do just that. So,
+
+```cpp
+x += 1; // is the same as
+x++;
+// and 
+x -= 1; // is the same as 
+x--; 
+```
+
+it adds/subtracts one from `x` and stores the result back in `x`.
+
+WARNING: only ever use this as it's own statement. Do not do something like 
+
+```cpp
+x = x++ + x++;
+```
+
+this is undefined behaviour, as in even the people who MADE C++ have NO idea what this might actually do. So only EVER increment or decrement as its own statement for readability, namely,
+
+```cpp
+// bla bla bla
+x++;
+int y = 2*x;
+// etc ...
+```
+
+Great! Now that we can do arithmetic and such, let's move on to control flow.
