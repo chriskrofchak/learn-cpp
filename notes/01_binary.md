@@ -158,4 +158,4 @@ If everything was typed correctly there shouldn't be any problem. Then `ls` your
 
 This should print `Hello, world.` to the command line, and you've written your first C++ program!! 
 
-[[NEXT NOTE](./2_variables.md)]
+[[NEXT NOTE](./02_variables.md)]

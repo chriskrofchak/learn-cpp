@@ -142,5 +142,5 @@ int y = 2*x;
 
 Great! Now that we can do arithmetic and such, let's move on to control flow.
 
-[[PREV NOTES](./1_binary.md)]
-[[NEXT NOTES](./3_flow.md)]
+[[PREV NOTES](./01_binary.md)]
+[[NEXT NOTES](./03_flow.md)]

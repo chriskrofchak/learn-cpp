@@ -121,4 +121,6 @@ Then, you can also use `>>` to append to a file, so if we call `date >> testOutf
 
 Now that we know a bit more about redirection in bash, it will be easier to write test inputs/outputs for our programs which interact with a user!
 
-[[PREV NOTES](./3_flow.md)] [[NEXT NOTES](./4_functions.md)]
+You can check out [[stdin.cc](../examples/stdin.cc)] and the test files `stdin_test1.in` and `stdin_test1.out` to see test input and output when I invoked `./a.out < stdin_test1.in > stdin_test1.out` (where `a.out` is compiled binary from `stdin.cc`).
+
+[[PREV NOTES](./03_flow.md)] [[NEXT NOTES](./04_functions.md)]

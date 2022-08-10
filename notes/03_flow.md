@@ -200,5 +200,5 @@ while (x > 0) {
 ```
 Does the above while loop terminate? If so, what is the value of $n$ at the end of the while loop? 
 
-[[PREV NOTES](./2_variables.md)]
-[[NEXT NOTES](./3_stdin.md)]
+[[PREV NOTES](./02_variables.md)]
+[[NEXT NOTES](./03_stdin.md)]
