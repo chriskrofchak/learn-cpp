@@ -67,7 +67,7 @@ Of course different passing conventions will make sense in different scenarios. 
 
 ## Recursion 
 
-A "recursive" function is simply a function which calls itself. If something is "recursively defined" this means the same thing, it is defined in terms of itself! Many structures and mathematical objects (and objects in the real world) can be defined recursively, which makes it very easy to work on them. For example, the Fibonacci sequence is defined as 1 for the first and second element in the sequence, and as $fib(n-1) + f(n-2)$ for $n\geq 3$. We will assume the first element is the 0th element (we index by 0 a lot in computer science). Then a recursive C++ function to compute the Fibonacci sequence is as follows:
+A "recursive" function is simply a function which calls itself. If something is "recursively defined" this means the same thing, it is defined in terms of itself! Many structures and mathematical objects (and objects in the real world) can be defined recursively, which makes it very easy to work on them. For example, the Fibonacci sequence is defined as 1 for the first and second element in the sequence, and as $fib(n-1) + fib(n-2)$ for $n\geq 3$. We will assume the first element is the 0th element (we index by 0 a lot in computer science). Then a recursive C++ function to compute the Fibonacci sequence is as follows:
 
 ```cpp
 int fib(int n) {
