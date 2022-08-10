@@ -112,11 +112,11 @@ Then, you can also use `>>` to append to a file, so if we call `date >> testOutf
 | cat >> outfile.txt  | whatever you write in the terminal is appended to file `outfile.txt` |
 | touch  `filename` | makes a file named `filename` in the current directory   |
 | touch `./subdir/filename` | makes a file in `subdir` (if it exists) named `filename` |
-| `|` (pipe command) | links output of the left to input on the right |
-| `./cmd1 | ./cmd2` | take output from the program `./cmd1` and uses it as input to `./cmd2` |
+| `\|` (pipe command) | links output of the left to input on the right |
+| `./cmd1 \| ./cmd2` | take output from the program `./cmd1` and uses it as input to `./cmd2` |
 | `./cmd < file.in > file.out` | uses `file.in` as input to `./cmd1` and writes it to `file.out` | 
-| `cat file.in | ./cmd1 > file.out` | is same as `./cmd < file.in > file.out` |
-| `cat file.in | ./cmd1 | cat > file.out` | is same as `./cmd < file.in > file.out` |
+| `cat file.in \| ./cmd1 > file.out` | is same as `./cmd < file.in > file.out` |
+| `cat file.in \| ./cmd1 \| cat > file.out` | is same as `./cmd < file.in > file.out` |
 | diff file1 file2 | checks for differences between file1 and file2 | 
 
 Now that we know a bit more about redirection in bash, it will be easier to write test inputs/outputs for our programs which interact with a user!
