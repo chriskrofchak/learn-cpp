@@ -7,4 +7,6 @@ int main() {
     while (std::cin >> input) {
         std::cout << "> " << input << std::endl;
     }
+
+    std::cout << "We are finishing gracefully!!!" << std::endl;
 }
